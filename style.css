@@ -1,0 +1,173 @@
+@charset "UTF-8";
+@import url(reset.css);
+@import url(variaveis.css);
+
+body{
+    /* background-color: var(--cor0);
+     */
+     background-color: rgb(28, 72, 107);
+   
+}
+
+.banner{
+    width: 100vw;
+    height: 630px;
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('imagens/banner.png');
+    /* background-position: right right; */
+    background-repeat: no-repeat; 
+    /* background-attachment: scroll; */
+    /* background-blend-mode: ; */
+    background-size: cover;
+    /* object-fit: contain;
+    object-position: 100% 100%;  
+    padding: 5px;
+    border-bottom: 2px solid blue; */
+    box-shadow: inset 147px 70px 430px var(--cor1), inset -247px 24px 388px var(--cor1);
+
+} 
+
+.banner-content{
+    /* box-sizing: content-box;  */
+    padding-top: 30px;
+    width: auto;
+    height: auto;
+    /* margin: 0px auto 0px auto;  */
+    /* border: 1px solid red; */
+    /* object-position:  75%; */
+    
+    /* left: 465px; */
+    text-align: center;
+}
+
+.banner-content > h1{
+    /* border: 1px solid blue; */
+    box-sizing: content-box;
+    width: 100%;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.banner-content > p{
+    margin-top: 30px;
+    display: block;
+    /* border: 1px dashed blue; */
+    box-sizing: content-box;
+    width: 100%;
+    font-size: 18px;
+
+}
+
+.banner-content > button {
+    /* display: block; */
+    /* width: auto;
+    height: auto; */
+    line-height: 2em;
+    padding: 20px;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 40px;
+    /* object-position: bottom bottom; */
+    border: 2px solid rgba(62, 62, 116, 0.103);
+    background-color: transparent;
+    color: rgb(28, 28, 88);
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 3px var(--cor1), 2px 2px 3px var(--cor1);
+
+}
+
+.logo{
+   
+    box-sizing: content-box;
+    margin: 0px auto 1px auto;
+    /* object-position: 50% 50%; */
+    /* width: 300px;
+    height: 280px; */
+    /* border: 1px solid rgba(255, 255, 255, 0);  */
+    /* border-radius: 50%; */
+}
+
+.logo > img{
+    border: 1px solid rgba(107, 103, 103, 0);
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    background-color: rgba(8, 8, 8, 0.103);
+}
+
+/* Parte do main */
+
+#course-content{
+    margin: 0px auto;
+    border: 1px solid red;
+    width: fit-content;
+    /* width: 100vw;*/
+    height: 350px; 
+    background-color: rgb(1, 4, 19);
+    
+}
+
+#course-content > h1{ 
+    text-align: center;
+    color:rgb(136, 54, 54);
+    border: 1px solid rgb(192, 183, 183);
+    font-size: 2em;
+    object-fit: contain;
+    
+
+}
+
+#course-content > p {
+    text-align: center;
+    color:rgb(136, 54, 54);
+    border: 1px solid rgb(192, 183, 183);
+ 
+}
+
+.lista-de-modulos{
+    text-align: center;
+    border: 1px solid rgb(138, 76, 76);
+    height: auto;
+    width: fit-content;
+    margin: 20px auto;
+    color: aliceblue;
+
+}
+
+.change-the-world{
+    text-align: left;
+    width: 100vw;
+    height: 400px;
+    background-image: url(imagens/woman-code.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border: 1px solid red;
+   
+
+}
+
+.change-the-world > h2{
+    border: 1px solid red;
+    font-size: 2em;
+    width: 175px;
+    height: 115px;
+    margin: 100px 10px 10px 100px;
+    word-wrap: break-word;
+
+}
+
+.professional-challenges{
+    border: 1px solid red;
+    width: 100vw;
+    height: 500px;
+    text-align: center;
+    
+}
+
+.professional-challenges > img {
+    border: 1px solid black;
+}
+
