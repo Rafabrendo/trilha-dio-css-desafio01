@@ -3,8 +3,7 @@
 @import url(variaveis.css);
 
 body{
-    /* background-color: var(--cor0);
-     */
+
     background-color: rgb(0, 0, 0);
     box-sizing: content-box;
 }
@@ -12,19 +11,13 @@ body{
 .banner{
     max-width: 1920px;
     min-width: 930px;
-
-    height: 630px;
+    min-height: 630px;
+    
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('imagens/banner.png');
-    /* background-position: right right; */
     background-repeat: no-repeat; 
-    /* background-attachment: scroll; */
-    /* background-blend-mode: ; */
     background-size: cover;
-    /* object-fit: contain;
-    object-position: 100% 100%;  
-    padding: 5px;
-    border-bottom: 2px solid blue; */
-    /* box-shadow: inset 147px 70px 430px var(--cor1), inset -247px 24px 388px var(--cor1);  */
+    display: flex;
+    justify-content: center;
 
 } 
 
@@ -36,40 +29,25 @@ body{
     background: -webkit-linear-gradient(#2b6d8a, #1472B7);
     background-clip: text;
     -webkit-background-clip: text;
-    /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.034); */
     
   }
   
 
 .banner-content{
-    /* box-sizing: content-box;  */
-    padding-top: 30px;
-    width: auto;
-    height: auto;
-    /* margin: 0px auto 0px auto;  */
-    /* border: 1px solid red; */
-    /* object-position:  75%; */
+    width: 730px;
+    height: 500px;
     
-    /* left: 465px; */
-    text-align: center;
+    
+    justify-content: space-between;
+    flex-shrink: 1;
+    align-self: center; 
+    
+    text-align: center; 
 }
 
-/* .banner-content > h1{
-    /* border: 1px solid blue; 
-    box-sizing: content-box;
-    width: 100%;
-    font-size: 40px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-transform: uppercase;
-    margin-top: 10px;
-    color: rgb(77, 141, 197);
-    text-shadow: 2px 2px 1px black;
-} */
+
 
 .banner-content > p{
-    /* margin-top: 30px; */
-    /* display: block; */
-    /* border: 1px dashed blue; */
     box-sizing: content-box;
     width: 100%;
     font-size: 20px;
@@ -90,7 +68,6 @@ body{
     text-align: center;
     font-weight: bolder;
     margin-top: 40px;
-    /* object-position: bottom bottom; */
     border: 2px solid rgba(1, 1, 219, 0.432);
     background-color: transparent;
     color: rgb(3, 3, 153);
@@ -109,11 +86,6 @@ body{
    
     box-sizing: content-box;
     margin: 0px auto 1px auto;
-    /* object-position: 50% 50%; */
-    /* width: 300px;
-    height: 280px; */
-    /* border: 1px solid rgba(255, 255, 255, 0);  */
-    /* border-radius: 50%; */
     
 }
 
@@ -129,37 +101,29 @@ body{
 /* Parte do main */
 
 #course-content{
-    border-top: 1px solid rgba(0, 0, 255, 0.596);
-    width: auto;
-    height: 450px;
-    text-align: center;
-    
-    
-    
+    border-top: 1px solid #33A8DB80;
+    max-width: 1920px;
+    min-width: 930px;
+    min-height: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* text-align: center; */
 
-    /* margin: 0px auto;
-    /* border: 1px solid red; 
-    width: fit-content;*/
-    /* width: 100vw;
-    height: 350px; 
-    background-color: rgb(1, 4, 19); */
-    
 }
 
 #course-content > h1{ 
     margin: 10px auto 10px auto;
     color: transparent;
     text-align: center;
+    text-transform: uppercase;
     background: -webkit-linear-gradient(#2b6d8a, #1472B7);
     background-clip: text;
     -webkit-background-clip: text;
-    /* border: 1px solid rgba(192, 183, 183, 0); */
     font-size: 2em;
     width: fit-content;
     object-fit: contain;
     padding: 15px;
-       
-    
 }
 
 #course-content > p {
@@ -205,14 +169,14 @@ body{
 
 .change-the-world{
     text-align: left;
-    width: auto;
-    height: 560px;
+    max-width: 1920px;
+    min-width: 930px;
+    min-height: 530px;
     background-image: url(imagens/woman-code.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     border-top: 1px solid #33A8DB80;
-    /* border-bottom: 1px solid #33A8DB80; */
     padding: 200px;
    
 
@@ -231,10 +195,11 @@ body{
 }
 
 .professional-challenges{
-    border-top: 1px solid blue;
-    border-bottom: 1px solid blue;
-    width: auto;
-    height: 760px;
+    border-top: 1px solid #33A8DB80;
+    /* border-bottom: 1px solid blue; */
+    max-width: 1920px;
+    min-width: 930px;
+    min-height: 530px;
     text-align: center;
     color: white;
     padding-top: 20px; 
@@ -256,16 +221,18 @@ body{
     width: 660px;
     
 }
-.professional-challenges > img {
-    border: 1px solid black;
-}
+
 
 footer{
-    width: fit-content;
-    margin: 30px auto;
-    
     text-align: center;
     height: 150px;
+    background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+    border-top: 1px solid #33A8DB80;
+    
+}
+
+.rodape{
+    margin: 30px auto;
     color: white;
 }
 
